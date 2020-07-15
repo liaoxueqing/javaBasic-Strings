@@ -134,6 +134,9 @@ class StringTest {
         // TODO: Create string using StringBuilder
         // <--Start
         StringBuilder builder = new StringBuilder();
+        builder.append("|---|\n");
+        builder.append("|   |\n");
+        builder.append("|---|\n");
         // --End-->
 
         final String expected =
