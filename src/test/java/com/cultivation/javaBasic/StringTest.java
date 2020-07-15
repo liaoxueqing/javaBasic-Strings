@@ -174,7 +174,14 @@ class StringTest {
         // こ - U+3053
         // れ - U+308c
         // <--Start
-        final String actual = null;
+        String[] unicode = {"306a", "306b", "3053", "308c"};
+        StringBuffer string = new StringBuffer();
+
+        for (int i = 0; i < unicode.length; i++) {
+            int data = Integer.parseInt(unicode[i], 16);
+            string.append((char) data);
+        }
+        final String actual = string.toString();
         // --End-->
 
         assertEquals(expected, actual);
