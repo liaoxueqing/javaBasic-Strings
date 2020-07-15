@@ -82,7 +82,7 @@ class StringTest {
 
         // TODO: Take part of the original string according to expectation.
         // <--start
-        final String partOfString = null;
+        final String partOfString = originalString.substring(5, 7);
         // --end-->
 
         final String expectedString = "is";
@@ -96,6 +96,7 @@ class StringTest {
      * - What if the input arguments is out of range of the string?
      * - What will happen if the the starting index is greater than the ending index?
      * - What will happen if the input string is of null reference?
+     * Throw error: java.lang.StringIndexOutOfBoundsException: String index out of range
      */
 
     @SuppressWarnings({"unused", "ConstantConditions"})
